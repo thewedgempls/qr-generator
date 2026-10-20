@@ -3,12 +3,11 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
-header{margin-bottom:16px}
-.logo{display:block;height:96px;width:auto;margin:0 0 12px}
-@media (prefers-color-scheme:dark){.logo{filter:invert(1)}}
+header{margin-bottom:16px;text-align:center}
+.logo{display:block;height:56px;width:auto;margin:0 auto 12px}
 h1{margin:0 0 4px;font-size:1.75rem}
 h2{font-size:1.1rem;margin:0 0 8px}
-.lede{color:var(--muted);margin:0 0 24px}
+.lede{color:var(--muted);margin:0 0 24px;text-align:center}
 .layout{display:grid;grid-template-columns:1fr;gap:24px}
 @media (min-width:720px){.layout{grid-template-columns:1fr 320px}}
 label{display:block;font-weight:600;margin:16px 0 4px}
