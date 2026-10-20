@@ -25,6 +25,7 @@
       <div class="row one">
         <div>
           <label for="ecc">Damage protection</label>
+          <p class="help" id="ecc-help">QR codes carry backup data so they still scan if part of the code gets dirty, torn, or faded. More protection survives more damage, but the code gets denser (more small squares), which is harder to scan from far away.</p>
           <select id="ecc" aria-describedby="ecc-desc ecc-help">
             <option value="L">Basic</option>
             <option value="M" selected>Standard (recommended)</option>
@@ -32,19 +33,18 @@
             <option value="H">Maximum</option>
           </select>
           <p class="help" id="ecc-desc"></p>
-          <p class="help" id="ecc-help">QR codes carry backup data so they still scan if part of the code gets dirty, torn, or faded. More protection survives more damage, but the code gets denser (more small squares), which is harder to scan from far away.</p>
         </div>
       </div>
 
       <div class="row one">
         <div>
           <label for="size">Download size (px)</label>
+          <p class="help" id="size-help">Larger sizes stay sharp on big prints; SVG scales to any size.</p>
           <select id="size" aria-describedby="size-help">
             <option value="512">512</option>
             <option value="1024" selected>1024</option>
             <option value="2048">2048 (large print)</option>
           </select>
-          <p class="help" id="size-help">Larger sizes stay sharp on big prints; SVG scales to any size.</p>
         </div>
       </div>
 

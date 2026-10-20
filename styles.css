@@ -4,7 +4,7 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
 header{margin-bottom:16px;text-align:center}
-.logo{display:block;height:56px;width:auto;margin:0 auto 12px}
+.logo{display:block;height:96px;width:auto;margin:0 auto 12px}
 h1{margin:0 0 4px;font-size:1.75rem}
 h2{font-size:1.1rem;margin:0 0 8px}
 .lede{color:var(--muted);margin:0 0 24px;text-align:center}
@@ -17,7 +17,7 @@ textarea{resize:vertical}
 input[type=color]{width:100%;height:42px;padding:2px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
 .row.one{grid-template-columns:1fr}
-.help{margin:6px 0 0;color:var(--muted);font-size:.85rem}
+.help{margin:6px 0 12px;color:var(--muted);font-size:.85rem}
 .msg{min-height:1.5em;margin:4px 0 0;color:var(--warn);font-size:.9rem}
 .preview{background:#fff;border:1px solid var(--line);border-radius:12px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .preview img{width:100%;height:100%;image-rendering:pixelated;display:block}
