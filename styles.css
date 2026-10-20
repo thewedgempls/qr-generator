@@ -1,0 +1,27 @@
+:root{--bg:#fafaf7;--fg:#1d1d1b;--muted:#5b5b56;--line:#d6d6cf;--card:#fff;--accent:#1f5f4a;--accent-fg:#fff;--warn:#9a3412}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecece6;--muted:#a3a39b;--line:#3a3a36;--card:#1f1f1c;--accent:#6fc5a5;--accent-fg:#0d1a15;--warn:#fb923c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1{margin:0 0 4px;font-size:1.75rem}
+h2{font-size:1.1rem;margin:0 0 8px}
+.lede{color:var(--muted);margin:0 0 24px}
+.layout{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:720px){.layout{grid-template-columns:1fr 320px}}
+label{display:block;font-weight:600;margin:16px 0 4px}
+label:first-child{margin-top:0}
+textarea,select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
+textarea{resize:vertical}
+input[type=color]{width:100%;height:42px;padding:2px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.msg{min-height:1.5em;margin:4px 0 0;color:var(--warn);font-size:.9rem}
+.preview{background:#fff;border:1px solid var(--line);border-radius:12px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.preview img{width:100%;height:100%;image-rendering:pixelated;display:block}
+.alt{color:var(--muted);font-size:.85rem;margin:8px 0;word-break:break-all}
+.actions{display:flex;gap:8px}
+button{flex:1;padding:12px;border:0;border-radius:8px;background:var(--accent);color:var(--accent-fg);font:inherit;font-weight:600;cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.notes{margin-top:32px;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.notes ul{margin:0;padding-left:20px;color:var(--muted)}
+.notes li{margin:4px 0}
