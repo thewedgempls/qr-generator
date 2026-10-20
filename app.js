@@ -3,6 +3,14 @@
   var $ = function (id) { return document.getElementById(id); };
   var content = $('content'), ecc = $('ecc'), size = $('size'), fg = $('fg'), bg = $('bg');
   var preview = $('preview'), msg = $('msg'), alt = $('alt'), pngBtn = $('png'), svgBtn = $('svg');
+  var eccDesc = $('ecc-desc');
+  var ECC_TEXT = {
+    L: 'Smallest code. Best for screens and clean prints.',
+    M: 'Handles light smudges and wear.',
+    Q: 'Handles scuffs, creases, and small tears.',
+    H: 'Best for outdoor signs, posters, and flyers that may get wet or torn. The code looks busier.'
+  };
+  function showEccDesc() { eccDesc.textContent = ECC_TEXT[ecc.value]; }
   var QUIET = 4; // modules of white border, per QR spec
   var current = null; // {modules, count, text}
 
@@ -114,5 +122,7 @@
   });
   [content, ecc, fg, bg].forEach(function (el) { el.addEventListener('input', render); });
   $('form').addEventListener('submit', function (e) { e.preventDefault(); });
+  ecc.addEventListener('input', showEccDesc);
+  showEccDesc();
   render();
 })();
